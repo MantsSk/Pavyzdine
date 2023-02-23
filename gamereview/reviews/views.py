@@ -37,6 +37,9 @@ def register(request):
     return render(request, 'registration/register.html')
 
 
+def new_view(request):
+    return render(request, 'registration/register.html')
+
 class PublisherView(generic.ListView):
     model = Publisher
     template_name = 'publishers.html'
